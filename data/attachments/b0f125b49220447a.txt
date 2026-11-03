@@ -1,0 +1,6 @@
+[32mINFO    [0m step:step.py:53 ▶ Log in and verify the result
+[32mINFO    [0m step:step.py:53 ▶ Submit username and password
+[32mINFO    [0m step:step.py:57 ✔ Submit username and password
+[32mINFO    [0m step:step.py:53 ▶ Verify the login result
+[32mINFO    [0m step:step.py:57 ✔ Verify the login result
+[32mINFO    [0m step:step.py:57 ✔ Log in and verify the result

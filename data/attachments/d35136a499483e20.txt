@@ -1,0 +1,6 @@
+18:01:32 | INFO    | ▶ Log in and verify the result
+18:01:32 | INFO    | ▶ Submit username and password
+18:01:34 | INFO    | ✔ Submit username and password
+18:01:34 | INFO    | ▶ Verify the login result
+18:01:34 | INFO    | ✔ Verify the login result
+18:01:34 | INFO    | ✔ Log in and verify the result

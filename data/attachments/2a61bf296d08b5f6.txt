@@ -1,0 +1,8 @@
+[32mINFO    [0m step:step.py:53 ▶ Log in and add a product to the cart
+[32mINFO    [0m step:step.py:53 ▶ Submit username and password
+[32mINFO    [0m step:step.py:57 ✔ Submit username and password
+[32mINFO    [0m step:step.py:53 ▶ Click add to cart
+[32mINFO    [0m step:step.py:57 ✔ Click add to cart
+[32mINFO    [0m step:step.py:53 ▶ Verify the cart badge count
+[32mINFO    [0m step:step.py:57 ✔ Verify the cart badge count
+[32mINFO    [0m step:step.py:57 ✔ Log in and add a product to the cart
