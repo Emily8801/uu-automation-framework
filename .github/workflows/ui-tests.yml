@@ -4,6 +4,12 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      test_kw:
+        description: "pytest -k 过滤表达式，留空跑全部用例（例：test_login_success）"
+        required: false
+        default: ""
+        type: string
 
 permissions:
   contents: write
@@ -33,8 +39,16 @@ jobs:
           sudo ln -sf /opt/allure-2.29.0/bin/allure /usr/bin/allure
 
       # 用例失败时也要出报告、发邮件，所以后续步骤用 if: always()
+      # test_kw 为空时跑全量；手动触发填表达式时只跑匹配的用例
       - name: Run UI tests
-        run: pytest tests -v --headless
+        env:
+          TEST_KW: ${{ inputs.test_kw }}
+        run: |
+          if [ -z "$TEST_KW" ]; then
+            pytest tests -v --headless
+          else
+            pytest tests -v --headless -k "$TEST_KW"
+          fi
 
       - name: Generate Allure report
         if: always()
@@ -56,5 +70,5 @@ jobs:
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           MAIL_TO: ${{ secrets.MAIL_TO }}
-          PAGES_URL: ${{ vars.PAGES_URL }}
+          PAGES_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
         run: python src/mailer.py
