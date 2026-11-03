@@ -1,2 +1,2 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Tue Nov 03 11:43:38 CST 2026","Tue Nov 03 11:43:44 CST 2026","6498","tests.cart","test_add_to_cart","TestAddToCart","","","Add backpack to cart after login",""
+"passed","Tue Nov 03 11:55:51 CST 2026","Tue Nov 03 11:55:53 CST 2026","1826","tests.cart","test_add_to_cart","TestAddToCart","","","Add backpack to cart after login",""
