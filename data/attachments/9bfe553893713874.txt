@@ -1,0 +1,8 @@
+01:09:14 | INFO    | ▶ Log in and add a product to the cart
+01:09:14 | INFO    | ▶ Submit username and password
+01:09:15 | INFO    | ✔ Submit username and password
+01:09:15 | INFO    | ▶ Click add to cart
+01:09:15 | INFO    | ✔ Click add to cart
+01:09:15 | INFO    | ▶ Verify the cart badge count
+01:09:15 | INFO    | ✔ Verify the cart badge count
+01:09:15 | INFO    | ✔ Log in and add a product to the cart

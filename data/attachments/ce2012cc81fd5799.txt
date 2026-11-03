@@ -1,0 +1,8 @@
+INFO     step:step.py:53 ▶ Log in and add a product to the cart
+INFO     step:step.py:53 ▶ Submit username and password
+INFO     step:step.py:57 ✔ Submit username and password
+INFO     step:step.py:53 ▶ Click add to cart
+INFO     step:step.py:57 ✔ Click add to cart
+INFO     step:step.py:53 ▶ Verify the cart badge count
+INFO     step:step.py:57 ✔ Verify the cart badge count
+INFO     step:step.py:57 ✔ Log in and add a product to the cart
