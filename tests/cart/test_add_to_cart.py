@@ -10,6 +10,6 @@ class TestAddToCart(BaseTest):
 
     data_file = "cart_data"
 
-    @case_title("登录后添加背包到购物车")
+    @case_title("Add backpack to cart after login")
     def test_add_backpack(self):
         CartSteps(self.driver).add_product_after_login(self.data.data_add_backpack)

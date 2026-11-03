@@ -10,22 +10,22 @@ class TestLogin(BaseTest):
 
     data_file = "login_data"
 
-    @case_title("正常账号密码登录成功")
+    @case_title("Login succeeds with valid credentials")
     def test_login_success(self):
         LoginSteps(self.driver).login_and_verify(self.data.data_login_success)
 
-    @case_title("锁定用户登录失败")
+    @case_title("Locked-out user cannot log in")
     def test_login_locked(self):
         LoginSteps(self.driver).login_and_verify(self.data.data_login_locked)
 
-    @case_title("错误账号密码登录失败")
+    @case_title("Login fails with invalid credentials")
     def test_login_wrong_credentials(self):
         LoginSteps(self.driver).login_and_verify(self.data.data_login_wrong_credentials)
 
-    @case_title("用户名为空登录失败")
+    @case_title("Login fails with empty username")
     def test_login_empty_username(self):
         LoginSteps(self.driver).login_and_verify(self.data.data_login_empty_username)
 
-    @case_title("密码为空登录失败")
+    @case_title("Login fails with empty password")
     def test_login_empty_password(self):
         LoginSteps(self.driver).login_and_verify(self.data.data_login_empty_password)

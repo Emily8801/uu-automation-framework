@@ -12,13 +12,13 @@ class LoginSteps:
 
     @step
     def login_and_verify(self, case):
-        """登录并校验结果"""
+        """Log in and verify the result"""
         self.submit_login(case["submit"])
         self.verify_result(case["verify"])
 
     @step
     def submit_login(self, data):
-        """提交账号密码"""
+        """Submit username and password"""
         self.login_page.open()
         self.login_page.fill_username(data["username"])
         self.login_page.fill_password(data["password"])
@@ -26,7 +26,7 @@ class LoginSteps:
 
     @step
     def verify_result(self, data):
-        """校验登录结果"""
+        """Verify the login result"""
         if data["success"]:
             # 先等首页元素出现(显式等待兜底跳转)，再断言 URL，避免竞态
             self.login_page.assert_element_visible(self.login_page.INVENTORY_CONTAINER)

@@ -86,7 +86,7 @@ def _html(cases: list, summary: dict, url: str) -> str:
     """生成邮件正文（HTML）。"""
     ok = summary["failed"] == 0
     color = "#28a745" if ok else "#dc3545"
-    title = "✅ 自动化测试全部通过" if ok else f"❌ 有 {summary['failed']} 条用例失败"
+    title = "✅ All tests passed" if ok else f"❌ {summary['failed']} test(s) failed"
 
     rows = "".join(
         f"<tr><td>{ICON.get(c['status'], '❓')}</td>"
@@ -96,19 +96,19 @@ def _html(cases: list, summary: dict, url: str) -> str:
         for c in sorted(cases, key=lambda x: x["status"] != "failed")
     )
 
-    link = f"<p>👉 <a href='{url}'>查看完整 Allure 报告</a></p>" if url else ""
+    link = f"<p>👉 <a href='{url}'>View the full Allure report</a></p>" if url else ""
 
     return f"""<div style='font-family:Segoe UI,Arial,sans-serif;max-width:760px;margin:auto'>
       <div style='background:{color};color:#fff;padding:16px 20px;border-radius:8px 8px 0 0'>
         <h2 style='margin:0'>{title}</h2>
-        <p style='margin:6px 0 0'>通过率 {summary['rate']:.1f}%
-        （通过 {summary['passed']} / 共 {summary['total']}）</p></div>
+        <p style='margin:6px 0 0'>Pass rate {summary['rate']:.1f}%
+        ({summary['passed']} passed / {summary['total']} total)</p></div>
       <div style='border:1px solid #eee;border-top:0;padding:16px 20px;border-radius:0 0 8px 8px'>
         {link}
         <table width='100%' cellpadding='6' style='border-collapse:collapse;font-size:13px'>
-          <tr style='background:#f6f8fa'><th>状态</th><th>用例标题</th><th>结果</th><th>信息</th></tr>
+          <tr style='background:#f6f8fa'><th>Status</th><th>Test case</th><th>Result</th><th>Details</th></tr>
           {rows}</table>
-        <p style='color:#999;font-size:12px'>本邮件由 UI 自动化测试工程自动生成。</p></div></div>"""
+        <p style='color:#999;font-size:12px'>This email was generated automatically by the UI automation project.</p></div></div>"""
 
 
 def send_report_mail(dry_run: bool = False) -> None:
