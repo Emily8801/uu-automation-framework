@@ -1,7 +1,2 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Tue Nov 03 16:25:13 CST 2026","Tue Nov 03 16:25:16 CST 2026","2765","tests.login","test_login","TestLogin","","","密码为空登录失败",""
-"passed","Tue Nov 03 16:24:44 CST 2026","Tue Nov 03 16:24:45 CST 2026","1166","tests.cart","test_add_to_cart","TestAddToCart","","","登录后添加背包到购物车",""
-"passed","Tue Nov 03 16:24:53 CST 2026","Tue Nov 03 16:24:56 CST 2026","2854","tests.login","test_login","TestLogin","","","锁定用户登录失败",""
-"passed","Tue Nov 03 16:25:07 CST 2026","Tue Nov 03 16:25:10 CST 2026","2593","tests.login","test_login","TestLogin","","","用户名为空登录失败",""
-"passed","Tue Nov 03 16:25:00 CST 2026","Tue Nov 03 16:25:03 CST 2026","3367","tests.login","test_login","TestLogin","","","错误账号密码登录失败",""
-"passed","Tue Nov 03 16:24:49 CST 2026","Tue Nov 03 16:24:50 CST 2026","1265","tests.login","test_login","TestLogin","","","正常账号密码登录成功",""
+"passed","Tue Nov 03 16:37:03 CST 2026","Tue Nov 03 16:37:05 CST 2026","2026","tests.cart","test_add_to_cart","TestAddToCart","","","Add backpack to cart after login",""
