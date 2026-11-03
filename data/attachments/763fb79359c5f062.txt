@@ -1,0 +1,6 @@
+INFO     step:step.py:53 ▶ 登录并校验结果
+INFO     step:step.py:53 ▶ 提交账号密码
+INFO     step:step.py:57 ✔ 提交账号密码
+INFO     step:step.py:53 ▶ 校验登录结果
+INFO     step:step.py:57 ✔ 校验登录结果
+INFO     step:step.py:57 ✔ 登录并校验结果
