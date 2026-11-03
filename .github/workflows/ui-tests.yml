@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       test_kw:
-        description: "pytest -k 过滤表达式，留空跑全部用例（例：test_login_success）"
+        description: "留空跑全部；或填用例函数名，如 test_login_success"
         required: false
         default: ""
         type: string
