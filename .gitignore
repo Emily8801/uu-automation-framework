@@ -1,0 +1,17 @@
+# 环境变量（含邮箱授权码，禁止入库）
+config/.env
+
+# 测试产物
+reports/
+*.log
+.screenshots/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# IDE
+.idea/
+.vscode/
+.trae/
