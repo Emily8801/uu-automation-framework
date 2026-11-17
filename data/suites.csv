@@ -1,2 +1,6 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Tue Nov 17 11:20:54 CST 2026","Tue Nov 17 11:20:59 CST 2026","4259","tests.cart","test_add_to_cart","TestAddToCart","","","Add backpack to cart after login",""
+"passed","Tue Nov 17 11:23:18 CST 2026","Tue Nov 17 11:23:26 CST 2026","7261","tests.login","test_login","TestLogin","","","Login fails with empty password",""
+"passed","Tue Nov 17 11:23:10 CST 2026","Tue Nov 17 11:23:15 CST 2026","4642","tests.login","test_login","TestLogin","","","Login fails with empty username",""
+"passed","Tue Nov 17 11:22:52 CST 2026","Tue Nov 17 11:22:57 CST 2026","5023","tests.login","test_login","TestLogin","","","Locked-out user cannot log in",""
+"passed","Tue Nov 17 11:22:36 CST 2026","Tue Nov 17 11:22:48 CST 2026","11951","tests.login","test_login","TestLogin","","","Login succeeds with valid credentials",""
+"passed","Tue Nov 17 11:23:01 CST 2026","Tue Nov 17 11:23:06 CST 2026","5191","tests.login","test_login","TestLogin","","","Login fails with invalid credentials",""
