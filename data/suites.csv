@@ -1,6 +1,6 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
 "passed","Tue Nov 17 11:10:26 CST 2026","Tue Nov 17 11:10:28 CST 2026","1933","tests.login","test_login","TestLogin","","","Login fails with empty password",""
-"passed","Tue Nov 17 11:10:08 CST 2026","Tue Nov 17 11:10:10 CST 2026","2830","tests.login","test_login","TestLogin","","","Locked-out user cannot log in",""
-"passed","Tue Nov 17 11:10:14 CST 2026","Tue Nov 17 11:10:16 CST 2026","2160","tests.login","test_login","TestLogin","","","Login fails with invalid credentials",""
 "passed","Tue Nov 17 11:09:53 CST 2026","Tue Nov 17 11:10:04 CST 2026","10518","tests.login","test_login","TestLogin","","","Login succeeds with valid credentials",""
 "passed","Tue Nov 17 11:10:20 CST 2026","Tue Nov 17 11:10:22 CST 2026","2091","tests.login","test_login","TestLogin","","","Login fails with empty username",""
+"passed","Tue Nov 17 11:10:14 CST 2026","Tue Nov 17 11:10:16 CST 2026","2160","tests.login","test_login","TestLogin","","","Login fails with invalid credentials",""
+"passed","Tue Nov 17 11:10:08 CST 2026","Tue Nov 17 11:10:10 CST 2026","2830","tests.login","test_login","TestLogin","","","Locked-out user cannot log in",""
